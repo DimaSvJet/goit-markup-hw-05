@@ -1,0 +1,125 @@
+:root {
+  --logo-color: #4d5ae5;
+  --nav-color: #2e2f42;
+  --green: #31d0aa;
+  --help-color: #8e8f99;
+  --accent-color: #e7e9fc;
+  --cloud-color: #f4f4fd;
+  --white: #ffffff;
+  --medium: 500;
+  --regular: 400;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: var(--white);
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 1.07143;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+h2 {
+font-size: 36px;
+line-height: 1.11111;
+letter-spacing: 0.02em;
+text-align: center;
+color: var(--nav-color);
+}
+
+h3 {
+  font-weight: var(--medium); /*medium*/;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--nav-color);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+}
+
+p {
+  font-weight: var(--regular); /*regular*/
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+ }
+
+.navigation {
+  color: var(--nav-color);
+  font-weight: var(--medium); /*medium*/
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.logo {
+  text-transform: uppercase;
+  color: var(--logo-color);
+  font-size: 18px;
+  line-height: 1.16667;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+.button {
+  font-weight: var(--medium); /*medium*/
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.logo-studio {
+  color: var(--nav-color);
+}
+.navigation-address {
+  font-weight: var(--regular); /*regular*/
+}
+
+.h1-section {
+  background-color: var(--nav-color);
+  color: var(--white);
+}
+
+.h1-section .button {
+  background-color: var(--logo-color);
+  color: var(--white);
+}
+
+#transparent {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+.section-our-team {
+  background-color: var(--cloud-color);
+}
+
+.ul-team {
+  text-align: center;
+  background-color: var(--white)
+}
+
+.p-footer {
+  color: var(--cloud-color);
+}
