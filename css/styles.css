@@ -6,28 +6,31 @@
   --accent-color: #e7e9fc;
   --cloud-color: #f4f4fd;
   --white: #ffffff;
+  --studio-color: #404bbf;
+  --body-color: #434455;
   --medium: 500;
   --regular: 400;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #434455;
+  color: var(--body-color);
   background-color: var(--white);
 }
 
 h1 {
   font-size: 56px;
-  line-height: 1.07143;
+  line-height: 1.07;
   letter-spacing: 0.02em;
 }
 
 h2 {
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--nav-color);
+  text-transform: capitalize;
 }
 
 h3 {
@@ -68,7 +71,8 @@ p {
   text-transform: uppercase;
   color: var(--logo-color);
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
 }
@@ -78,13 +82,33 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.nav-items:hover {
+  color: var(--studio-color);
+}
+
+.nav-items:active {
+  text-decoration: underline;
 }
 
 .logo-studio {
   color: var(--nav-color);
+  letter-spacing: 0.03em;
 }
 .navigation-address {
   font-weight: var(--regular); /*regular*/
+  font-style: normal;
+}
+
+.contacts {
+  color: var(--body-color);
+}
+
+.contacts:hover,
+.contacts:active {
+  color: var(--studio-color);
 }
 
 .h1-section {
@@ -98,7 +122,13 @@ p {
   color: var(--white);
 }
 
-#transparent {
+.h1-section .button:hover,
+.h1-section .button:focus {
+  background-color: var(--studio-color);
+  color: var(--white);
+}
+
+/*#transparent {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -109,6 +139,10 @@ p {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
   overflow: hidden;
+}*/
+
+#transparent {
+  visibility: hidden;
 }
 
 .section-our-team {
@@ -118,6 +152,12 @@ p {
 .ul-team {
   text-align: center;
   background-color: var(--white);
+}
+.li-membres {
+  background-color: var(--white);
+}
+.p-text {
+  font-size: 16px;
 }
 
 .footer {
