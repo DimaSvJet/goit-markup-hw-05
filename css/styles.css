@@ -111,19 +111,19 @@ p {
   color: var(--body-color);
 }
 
-.h1-section {
+.title-section {
   background-color: var(--nav-color);
   color: var(--white);
   text-align: center;
 }
 
-.h1-section .button {
+.title-section .button {
   background-color: var(--logo-color);
   color: var(--white);
 }
 
-.h1-section .button:hover,
-.h1-section .button:focus {
+.title-section .button:hover,
+.title-section .button:focus {
   background-color: var(--studio-color);
   color: var(--white);
 }
