@@ -84,13 +84,19 @@ p {
 }
 
 .nav-items:hover,
-.nav-items:focus {
+.contacts:hover,
+.contacts:active {
   color: var(--studio-color);
 }
 
 .nav-items:active {
   text-decoration: underline;
 }
+.a-nav:focus,
+.a-adress:focus {
+  color: var(--studio-color);
+}
+
 
 .logo-studio {
   color: var(--nav-color);
@@ -103,12 +109,6 @@ p {
 
 .contacts {
   color: var(--body-color);
-}
-
-.contacts:focus,
-.contacts:hover,
-.contacts:active {
-  color: var(--studio-color);
 }
 
 .h1-section {
