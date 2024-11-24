@@ -43,8 +43,6 @@ h3 {
 
 ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
 a {
@@ -85,7 +83,8 @@ p {
   cursor: pointer;
 }
 
-.nav-items:hover {
+.nav-items:hover,
+.nav-items:focus {
   color: var(--studio-color);
 }
 
@@ -106,6 +105,7 @@ p {
   color: var(--body-color);
 }
 
+.contacts:focus,
 .contacts:hover,
 .contacts:active {
   color: var(--studio-color);
@@ -126,23 +126,6 @@ p {
 .h1-section .button:focus {
   background-color: var(--studio-color);
   color: var(--white);
-}
-
-/*#transparent {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
-  overflow: hidden;
-}*/
-
-#transparent {
-  visibility: hidden;
 }
 
 .section-our-team {
