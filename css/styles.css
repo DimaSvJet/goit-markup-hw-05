@@ -1,3 +1,10 @@
+/* #region general */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --logo-color: #4d5ae5;
   --nav-color: #2e2f42;
@@ -18,15 +25,25 @@ body {
   background-color: var(--white);
 }
 
-h1,h2,h3,h4,h5,h6,p {
+header {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding-left: 0;
 }
-
 
 h1 {
   font-size: 56px;
@@ -68,21 +85,16 @@ p {
   letter-spacing: 0.02em;
 }
 
-.navigation {
-  color: var(--nav-color);
-  font-weight: var(--medium); /*medium*/
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
-.logo {
-  text-transform: uppercase;
-  color: var(--logo-color);
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  font-weight: bold;
-  font-family: 'Raleway', sans-serif;
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .button {
@@ -91,6 +103,42 @@ p {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+}
+/* #endregion general */
+
+/* #region header */
+
+.navigation {
+  color: var(--nav-color);
+  font-weight: var(--medium); /*medium*/
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.navigation .container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  text-transform: uppercase;
+  color: var(--logo-color);
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  margin-right: 76px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-items {
+  padding: 24px 0;
 }
 
 .nav-items:hover,
@@ -116,19 +164,41 @@ p {
   font-style: normal;
 }
 
+.address-menu {
+  display: flex;
+  gap: 40px;
+}
+
 .contacts {
   color: var(--body-color);
 }
 
+/* #endregion header */
+
+/* #region title-section */
 .title-section {
   background-color: var(--nav-color);
   color: var(--white);
   text-align: center;
+  padding: 188px 0;
+}
+
+.container .title-text {
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title-section .button {
   background-color: var(--logo-color);
   color: var(--white);
+  display: block;
+  max-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title-section .button:hover,
@@ -137,6 +207,9 @@ p {
   color: var(--white);
 }
 
+/* #endregion title-section */
+
+/* #region enother */
 .section-our-team {
   background-color: var(--cloud-color);
 }
@@ -160,3 +233,4 @@ p {
 .footer .logo-studio {
   color: var(--cloud-color);
 }
+/* #endregion enother */
