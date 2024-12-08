@@ -134,7 +134,7 @@ img {
   letter-spacing: 0.03em;
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
-  margin-right: 76px;
+  margin-right: auto;
 }
 
 .nav-menu {
@@ -144,10 +144,6 @@ img {
 
 .nav-items {
   padding: 24px 0;
-}
-
-.nav-items:last-child {
-  margin-right: 332px;
 }
 
 .nav-items:hover,
@@ -195,6 +191,10 @@ img {
   color: var(--white);
   text-align: center;
   padding: 188px 0;
+  background-image: url("./images/people-office 1.jpg");
+	background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto auto;
 }
 
 .container .title-text {
