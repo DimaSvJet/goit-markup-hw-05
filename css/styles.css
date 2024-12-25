@@ -207,7 +207,7 @@ img {
 /* #endregion header */
 
 /* #region title-section */
-.title-section {
+.title-section .container {
   background-color: var(--nav-color);
   color: var(--white);
   text-align: center;
@@ -218,7 +218,7 @@ img {
     ),
     url('../images/people-office.jpg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   max-width: 1440px;
 }
@@ -324,6 +324,7 @@ img {
 }
 .p-text {
   font-size: 16px;
+  margin-bottom: 8px;
 }
 
 .socialbooks {
@@ -346,17 +347,18 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.socialweb:hover {
-  background-color: var(--studio-color);
+
 }
 
+.socialweb:hover,
 .socialweb:focus {
   background-color: var(--studio-color);
 }
+
 .icon-web {
   fill: var(--cloud-color);
 }
+
 /* #endregion members-section */
 
 /* #region our-portfolio-section */
@@ -376,11 +378,10 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-items:hover {
+.portfolio-items:hover .portfol-text-img {
   transform: translateY(0%);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transform: translateY(0%);
 }
 
 .describe-portf-img {
@@ -409,6 +410,8 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+
 /* #endregion our-portfolio-section */
 
 /* #region footer */
@@ -417,17 +420,15 @@ img {
   background-color: var(--nav-color);
   color: var(--cloud-color);
   padding: 100px 0;
-  display: flex;
+ 
 }
 
 .footer .container {
-  display: flex;
-  align-items: baseline;
-  margin-right: 120px;
+ display: flex;
 }
+.container .logo-p{
 
-.logo-p {
-  display: flex;
+  margin-right: 120px;
 }
 
 .footer .logo-studio {
@@ -478,6 +479,7 @@ img {
 }
 
 .iconsfooter {
+  pointer-events: none; 
   fill: var(--cloud-color);
 }
 /* #endregion footer */
